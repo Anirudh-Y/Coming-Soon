@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    text-decoration: none !important;
+    color: inherit !important;
+    text-align: center;
+}
+
+
+.hide{
+    display: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: url('./Images/pexels-carlo-obrien-15023486.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(26, 129, 149, 0.8);
+}
+
+.clock{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+.clock > img{
+    width: 30%;
+    margin: auto;
+    animation-name: clock;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.head{
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.head > h1{
+    color: white !important;
+    font-size: 450%;
+}
+
+.nav_content > a{
+
+    color: white !important;
+    margin: 0 30px;
+}
+
+
+.navbar1{
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    padding: 20px 0;
+}
+
+.navbar-brand >img{
+    width: 100px;
+}
+
+@keyframes clock {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hide{
+    display: none;
+}
